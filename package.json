@@ -1,0 +1,23 @@
+{
+  "name": "timesheet",
+  "version": "1.0.0",
+  "description": "Timesheet Web Dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenpowerlink/Timesheet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greenpowerlink/Timesheet/issues"
+  },
+  "homepage": "https://github.com/greenpowerlink/Timesheet#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.17.1"
+  }
+}
