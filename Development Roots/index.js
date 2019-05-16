@@ -26,6 +26,17 @@ index.get('/createjobtable', (req, res) => {
     });
 });
 
+// Select posts
+index.get('/getposts', (req, res) => {
+    let sql = `SELECT * FROM posts WHERE id = ${req.params.id}`;
+    let query = db.query(sql, (err, results) => {
+        if(err) throw err;
+        console.log(results);
+        res.send('Posts fetched...');
+    });
+});
+
+
 // Insert Job Into the Data Base
 //app.get('/Add Job', (req, res) => {
  //   let post = {title:'Post One', body:'This is post number one'};
