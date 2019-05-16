@@ -4,7 +4,8 @@
 <head>
 <title>Jobs</title>
 <link rel="stylesheet" href="Styles/main.css">
-</style>
+<script type="text/javascript" src="JavaScript/Data-Base.js"></script>
+
 
 </head>
 
@@ -21,11 +22,15 @@
 </header>
 <div class="row">
 	<div>
-		col1</div>
+			First name: <input type="text" id="firstname" value="name">
+				
+	</div>
 	<div>
-		col2</div>
+			<button onclick="SQLfind()">Call the function</button>
+	</div>
 	<div>
-		col3</div>
+			Result: <output type="text" id="Result" >
+	</div>
 </div>
 
 </body>
