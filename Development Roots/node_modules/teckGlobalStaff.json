@@ -1,0 +1,106 @@
+[
+  {
+    "role_id": 1,
+    "position": "Accounts Manager"
+  },
+  {
+    "role_id": 2,
+    "position": "Assistant Project & Cost Controller"
+  },
+  {
+    "role_id": 3,
+    "position": "Designer"
+  },
+  {
+    "role_id": 4,
+    "position": "Electrical Apprentice"
+  },
+  {
+    "role_id": 5,
+    "position": "Electrical Designer"
+  },
+  {
+    "role_id": 6,
+    "position": "Electrical Engineer"
+  },
+  {
+    "role_id": 7,
+    "position": "Electrician"
+  },
+  {
+    "role_id": 8,
+    "position": "Engineering Manager"
+  },
+  {
+    "role_id": 9,
+    "position": "Executive Assistant"
+  },
+  {
+    "role_id": 10,
+    "position": "Fabricator"
+  },
+  {
+    "role_id": 11,
+    "position": "Graduate Electrical Engineer"
+  },
+  {
+    "role_id": 12,
+    "position": "Gratuate Mechanical Engineer"
+  },
+  {
+    "role_id": 13,
+    "position": "Intern"
+  },
+  {
+    "role_id": 14,
+    "position": "Managing Director"
+  },
+  {
+    "role_id": 15,
+    "position": "Mechanical Designer & Coordinator"
+  },
+  {
+    "role_id": 16,
+    "position": "Office Administrator"
+  },
+  {
+    "role_id": 17,
+    "position": "Operation Manager"
+  },
+  {
+    "role_id": 18,
+    "position": "Procurement Officer"
+  },
+  {
+    "role_id": 19,
+    "position": "Project & Cost Controller"
+  },
+  {
+    "role_id": 20,
+    "position": "Project Engineer"
+  },
+  {
+    "role_id": 21,
+    "position": "Project Manager"
+  },
+  {
+    "role_id": 22,
+    "position": "Senior Electrical Engineer"
+  },
+  {
+    "role_id": 23,
+    "position": "Senior Electrical Designer"
+  },
+  {
+    "role_id": 24,
+    "position": "Software Engineer"
+  },
+  {
+    "role_id": 25,
+    "position": "Trade assistant"
+  },
+  {
+    "role_id": 26,
+    "position": "Workshop Manager"
+  }
+]
