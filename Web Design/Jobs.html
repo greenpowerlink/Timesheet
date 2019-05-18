@@ -22,14 +22,23 @@
 </header>
 <div class="row">
 	<div>
-			First name: <input type="text" id="firstname" value="name">
+			
 				
 	</div>
 	<div>
-			<button onclick="SQLfind()">Call the function</button>
+			<form name = "f2"> <!-- the "this" in GetSelectedItem(this) is the input -->
+				First name: <input type="text" id="firstname" value="name">
+				<div>
+					<button onClick="GetSelectedItem2()">Submit</button>
+					<div id="test2"></div>
+				</div>
+				
+			</form>
+			
+			
 	</div>
 	<div>
-			Result: <output type="text" id="Result" >
+			
 	</div>
 </div>
 
