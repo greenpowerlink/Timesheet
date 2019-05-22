@@ -3,7 +3,7 @@ import MySQLdb
 
 db = MySQLdb.connect(host="localhost",    # your host, usually localhost
                      user="root",         # your username
-                     password="TeckGlobal",  # your password
+                     passwd="TeckGlobal",  # your password
                      db="teckglobal")        # name of the data base
 
 # you must create a Cursor object. It will let
@@ -15,6 +15,6 @@ cur.execute("SELECT * FROM employee")
 
 # print all the first cell of all the rows
 for row in cur.fetchall():
-    print row[0]
+    print (row[0]);
 
 db.close()
