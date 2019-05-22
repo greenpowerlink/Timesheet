@@ -3,7 +3,7 @@ import MySQLdb
 
 db = MySQLdb.connect(host="localhost",    # your host, usually localhost
                      user="root",         # your username
-                     passwd="TeckGlobal",  # your password
+                     password="TeckGlobal",  # your password
                      db="teckglobal")        # name of the data base
 
 # you must create a Cursor object. It will let
