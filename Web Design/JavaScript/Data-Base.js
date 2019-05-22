@@ -2,13 +2,15 @@ const express = require('express');
 const mysql = require('mysql');
 
 // Create connection
-function sqlcreatconnection() {
   const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '123456',
-    database: 'timesheet'
+   // password: '123456',
+    database: 'test'
+    
   });
+
+
   // Connect
   db.connect((err) => {
     if (err) {
@@ -16,12 +18,13 @@ function sqlcreatconnection() {
     }
     console.log('MySql Connected...');
   });
-};
 
 
-const index = express();
+
+
+const app = express();
 // Create table
-Data - base.get('/createjobtable', (req, res) => {
+app.get('/createjobtable', (req, res) => {
   let sql = 'CREATE TABLE Jobs(id int AUTO_INCREMENT, Job VARCHAR(255), Client VARCHAR(255), Name VARCHAR(255), State VARCHAR(255), Start VARCHAR(255), Due VARCHAR(255), PRIMARY KEY(id))';
   db.query(sql, (err, result) => {
     if (err) throw err;
@@ -31,7 +34,7 @@ Data - base.get('/createjobtable', (req, res) => {
 });
 
 // Select posts
-Data - base.get('/getposts', (req, res) => {
+app.get('/getposts', (req, res) => {
   let sql = `SELECT * FROM posts WHERE id = ${req.params.id}`;
   let query = db.query(sql, (err, results) => {
     if (err) throw err;
@@ -54,7 +57,7 @@ Data - base.get('/getposts', (req, res) => {
 
 
 
-Data - base.listen('3000', () => {
+app.listen('3000', () => {
   console.log('Server started on port 3000');
 });
 
