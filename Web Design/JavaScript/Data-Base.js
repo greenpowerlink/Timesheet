@@ -2,45 +2,47 @@ const express = require('express');
 const mysql = require('mysql');
 
 // Create connection
-  const db = mysql.createConnection({
+const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-   // password: '123456',
-    database: 'test'
-    
-  });
+    // password: '123456',
+    database: 'teckglobal'
 
-
-  // Connect
-  db.connect((err) => {
-    if (err) {
-      throw err;
-    }
-    console.log('MySql Connected...');
-  });
-
-
-
-
-const app = express();
-// Create table
-app.get('/createjobtable', (req, res) => {
-  let sql = 'CREATE TABLE Jobs(id int AUTO_INCREMENT, Job VARCHAR(255), Client VARCHAR(255), Name VARCHAR(255), State VARCHAR(255), Start VARCHAR(255), Due VARCHAR(255), PRIMARY KEY(id))';
-  db.query(sql, (err, result) => {
-    if (err) throw err;
-    console.log(result);
-    res.send('Posts table created...');
-  });
 });
 
+
+// Connect
+db.connect((err) => {
+    if (err) {
+        throw err;
+    }
+    console.log('MySql Connected...');
+});
+
+
+
+/* 
+const app = express();
+// Create table
+function sqlcreation() {
+    sql = 'CREATE TABLE Jobs(id int AUTO_INCREMENT, Job VARCHAR(255), Client VARCHAR(255), Name VARCHAR(255), State VARCHAR(255), Start VARCHAR(255), Due VARCHAR(255), PRIMARY KEY(id))';
+    db.query(sql, (err, result) => {
+        if (err) throw err;
+        console.log(result);
+
+        res.send('Posts table created...');
+    });
+    data = document.getElementById("firstname").value;
+    document.getElementById('test2').textContent = data;
+}
 // Select posts
 app.get('/getposts', (req, res) => {
-  let sql = `SELECT * FROM posts WHERE id = ${req.params.id}`;
-  let query = db.query(sql, (err, results) => {
-    if (err) throw err;
-    console.log(results);
-    res.send('Posts fetched...');
-  });
+    let sql = `SELECT * FROM posts WHERE id = ${req.params.id}`;
+    let query = db.query(sql, (err, results) => {
+        if (err) throw err;
+        console.log(results);
+        res.send('Posts fetched...');
+    });
 });
 
 
@@ -55,17 +57,16 @@ app.get('/getposts', (req, res) => {
 //   });
 //});
 
+ */
 
-
-app.listen('3000', () => {
-  console.log('Server started on port 3000');
+app.listen('3002', () => {
+    console.log('Server started on port 3002');
 });
-
+/* 
 function GetSelectedItem2() {
 
-  data = document.getElementById("firstname").value;
-  document.getElementById('test2').textContent = data;
+    data = document.getElementById("firstname").value;
+    document.getElementById('test2').textContent = data;
 
 
-}
-
+} */
