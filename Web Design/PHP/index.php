@@ -1,4 +1,7 @@
 <?php
+ $dbhost='localhost:3306'
+
+
 include_once 'includes/dbh.php';
 ?>
 
@@ -25,3 +28,5 @@ include_once 'includes/dbh.php';
 
 </body>
 </html>
+
+<!-- https://www.tutorialspoint.com/php/mysql_select_php.htm check this link to get data from database -->

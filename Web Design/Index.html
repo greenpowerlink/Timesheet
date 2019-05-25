@@ -19,14 +19,38 @@
             </ul>
         </nav>
     </header>
-    <div class="row">
-        <div>
-            col1</div>
-        <div>
-            col2</div>
-        <div>
-            col3</div>
-    </div>
+
+
+    <h2>Request employee_data</h2>
+
+    <form action="">
+        <select name="employee" onchange="showEmploee(this.value)">
+		<option value="">Select a Employee:</option> 
+		<option value="1">David,Zucaro</option>
+		<option value="2 ">Ben,Ko</option>
+		<option value="3">Sean,Kho</option>
+	  </select>
+    </form>
+    <br>
+    <div emp_id=v alue>Employee info will be listed here...</div>
+
+    <script>
+        function showEmployee(str) {
+            var details;
+            if (str == "") {
+                document.getElementById("SELECT emp_id FROM employee;").innerHTML = "";
+                return;
+            }
+            details = new XMLHttpRequest();
+            details.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("SELECT emp_id FROM employee;").innerHTML = this.responseText;
+                }
+            };
+            details.open("GET", "getcustomer.asp?q=" + str, true);
+            details.send();
+        }
+    </script>
 
 </body>
 

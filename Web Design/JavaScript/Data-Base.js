@@ -20,6 +20,15 @@ db.connect((err) => {
 });
 
 
+app.get("/"function(req resp) {
+    connection.require("SELECT * FROM teckglobal.employee", function(error, rows, fields) if (!!error) {
+            console.log('Error in the query');
+        } else {
+            console.log('Succesful query');
+        }
+    }
+
+});
 
 /* 
 const app = express();
