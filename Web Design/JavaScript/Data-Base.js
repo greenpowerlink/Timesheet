@@ -66,10 +66,10 @@ app.get('/updatedattributes', (req, res) => {
 });
 
 
-// Select employee http://127.0.0.1:3000/getemployeelist
+// Select employee http://127.0.0.1:3000/getemployeelist/1 ----It can be a number between 1 to max number of employees 
 
-app.get('/getemployeelist', (req, res) => {
-    let sql = `SELECT * FROM employeelist WHERE emp_id=1`;
+app.get('/getemployeelist/:emp_id', (req, res) => {
+    let sql = `SELECT * FROM employeelist WHERE emp_id= ${req.params.emp_id}`;
     let query = db.query(sql, (err, results) => {
         if (err) throw err;
         console.log(results);
