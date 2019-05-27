@@ -35,21 +35,6 @@
     <div emp_id=v alue>Employee info will be listed here...</div>
 
     <script>
-        function showEmployee(str) {
-            var details;
-            if (str == "") {
-                document.getElementById("SELECT emp_id FROM employee;").innerHTML = "";
-                return;
-            }
-            details = new XMLHttpRequest();
-            details.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("SELECT emp_id FROM employee;").innerHTML = this.responseText;
-                }
-            };
-            details.open("GET", "getcustomer.asp?q=" + str, true);
-            details.send();
-        }
     </script>
 
 </body>
