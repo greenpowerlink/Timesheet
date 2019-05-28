@@ -2,10 +2,11 @@
 <html>
 
 <head>
-    <title>Jobs</title>
+    <title>Teck Global</title>
     <link rel="stylesheet" href="Styles/main.css">
     <script type="text/javascript" src="JavaScript/Data-Base.js"></script>
     <php type="text/php" src="PHP/SQLRequest.php"></php>
+
 
 </head>
 
@@ -13,33 +14,24 @@
 
     <header>
         <nav>
-            <h1>Jobs </h1>
+            <h1>Teck Global </h1>
             <ul>
                 <li><a href="Index.html">Home</a> </li>
-                <li><a href="Jobs.html">Jobs</a> </li>
+                <li><a href="Jobs.html">Update weekly Timesheet</a> </li>
 
             </ul>
         </nav>
     </header>
-    <div class="row">
-
-        <div>
-
-            First name: <input type="text" id="firstname" value="name">
-            <div>
-                <button onClick="GetSelectedItem2()">Submit</button>
-                <button onClick="sqlcreation()">Submit2</button>
 
 
-            </div>
+    <h1>Select weekly timesheet:</h1>
 
+    <h3>Show a file-select field which allows only one file to be chosen:</h3>
+    <form action="/action_page.php">
+        Select a file: <input type="file" name="myFile"><br><br>
+        <input type="submit">
+    </form>
 
-
-        </div>
-        <div id="test2">
-
-        </div>
-    </div>
 
 </body>
 
